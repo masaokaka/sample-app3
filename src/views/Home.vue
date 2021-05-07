@@ -1,18 +1,28 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>{{message}}</h1>
+    <p>{{text}}</p>
+    <v-flex xs12 mt-5>
+      <v-btn color="info" @click="login">Googleアカウントでログイン</v-btn>
+    </v-flex>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import {mapActions} from "vuex"
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
+  data(){
+    return{
+      message:'Hello Vue!',
+      text:'こちらはVue、Vuex、VueRouterなどの練習のためのページです。'
+    }
+  },
+  methods:{
+    ...mapActions(["login"])
   }
 }
 </script>
+<style scoped>
+</style>
