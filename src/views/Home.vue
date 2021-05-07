@@ -4,6 +4,12 @@
     <p>{{text}}</p>
     <v-flex xs12 mt-5>
       <v-btn color="info" @click="login">Googleアカウントでログイン</v-btn>
+      <h2>変更部分です！</h2>
+      <h2>変更部分です！</h2>
+      <h2>変更部分です！</h2>
+      <h2>変更部分です！</h2>
+      <h2>変更部分です！</h2>
+
     </v-flex>
     <h1>こんにちは</h1>
   </div>
