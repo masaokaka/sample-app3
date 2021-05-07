@@ -5,6 +5,7 @@
     <v-flex xs12 mt-5>
       <v-btn color="info" @click="login">Googleアカウントでログイン</v-btn>
     </v-flex>
+    <h1>こんにちは</h1>
   </div>
 </template>
 
